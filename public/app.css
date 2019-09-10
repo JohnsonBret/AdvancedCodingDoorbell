@@ -1,0 +1,70 @@
+:root {
+    --blue-color:rgb(25,31,108);
+    --orange-color:rgb(233,94,0);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+#leftPicture{
+    grid-column: 1/2;
+    grid-row: 1/2; 
+    background-image: url("/picOfUCode.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 33% 50%;
+}
+
+#rightForm{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--blue-color);
+}
+
+#formContainer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: 0px 0px 4px black;
+    padding: 1rem;
+    background-color: var(--orange-color);
+}
+
+#enterBtn{
+    background-color: var(--blue-color);
+    color: #ffffff;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+#ringer{
+    display: none;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    background-color: var(--orange-color);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+    }
+
+    main{
+    flex-direction: row;
+}
+}
