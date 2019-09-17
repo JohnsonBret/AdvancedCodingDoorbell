@@ -55,8 +55,24 @@ main{
     display: none;
     grid-column: 2/3;
     grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
 
     background-color: var(--orange-color);
+}
+
+#ringerBtn{
+    background-color: var(--blue-color);
+    color: #ffffff;
+    border: none;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 1.3rem;
+    margin: 2rem;
+    width: 80%;
+    height: 80%;
 }
 
 @media only screen and (max-width: 600px) {
