@@ -1,4 +1,24 @@
+:root {
+    --blue-color:rgb(25,31,108);
+    --orange-color:rgb(233,94,0);
+}
+
 body{
     background-color: var(--blue-color);
     color: var(--orange-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#arrivalContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.cardStyle{
+    background-color: var(--orange-color);
+    color: white;
+    box-shadow: 3px 3px 0px white;
+    padding: 10px;
 }
